@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de usuarios</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <div class="div-header">
+            <h1>Tarea 2 - Registro con localStorage</h1>
+        </div>
+    </header>
+    <div class="contenido">
+        <div class="form">
+            <form id="formulario">
+                <div class="grupo">
+                    <label for="f-id">ID</label>
+                    <input type="text" id="f-id" spellcheck="false">
+                </div>
+                <div class="grupo">
+                    <label for="f-nombre">Nombre</label>
+                    <input type="text" id="f-nombre" spellcheck="false">
+                </div>
+                <div class="grupo">
+                    <label for="f-apellido">Apellido</label>
+                    <input type="text" id="f-apellido" spellcheck="false">
+                </div>
+                <div class="grupo">
+                    <label for="f-cedula">Cédula</label>
+                    <input type="text" id="f-cedula" spellcheck="false">
+                </div>
+                <div class="grupo">
+                    <label for="f-fn">Fecha de nacimiento</label>
+                    <input type="text" id="f-fn" spellcheck="false" placeholder="dd/mm/yyyy">
+                </div>
+                <div class="grupo">
+                    <label for="f-email">Correo electrónico</label>
+                    <input type="text" id="f-email" spellcheck="false">
+                </div>
+                <div class="grupo">
+                    <label for="f-telefono">Teléfono</label>
+                    <input type="text" id="f-telefono" spellcheck="false">
+                </div>
+            </form>
+            <div class="botones">
+                <input type="button" class="btn btn-success btn-sm" id="btn-agregar" value="Agregar">
+                <input type="button" class="btn btn-warning btn-sm" id="btn-editar" value="Editar">
+                <input type="button" class="btn btn-info btn-sm" id="btn-reset" value="Limpiar campos">
+                <input type="button" class="btn btn-danger btn-sm" id="btn-borrarTodo" value="Borrar todos los registros">
+                <input type="button" class="btn btn-secondary btn-sm" id="btn-mostrarTodo" value="Mostrar todos los registros">
+            </div>
+        </div>
+        <div class="div-registros table-responsive">
+            <table class="table table-sm table-hover table-dark">
+                <thead>
+                    <tr scope="row">
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellido</th>
+                        <th scope="col">Cédula</th>
+                        <th scope="col">Fecha de nacimiento</th>
+                        <th scope="col">Correo electrónico</th>
+                        <th scope="col">Teléfono</th>
+                        <th scope="col">Zodiaco</th>
+                        <th scope="col">
+                            <!--Botones editar y eliminar de cada fila-->
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="tb-Datos">
+                    <!--Aquí van las filas con los datos generados-->
+                </tbody>
+                <tfoot>
+                    <tr scope="row">
+                        <th id="total-clientes">
+                            <!--El total de clientes se mostrará aca-->
+                        </th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <div class="div-footer">
+            <p>DISEÑO INSPIRADO EN
+                <a href="https://draculatheme.com/brackets/" target="_blank">DRACULATHEME.COM</a>
+            </p>
+            <p>Nombre: Yeyskalyn Altagracia Cordero Herrera<br />Matricula: 2018-6939</p>
+            <div class="redes">
+                <a href="https://www.facebook.com/aicarg.aciey/" target="_blank">
+                    <img src="recursos/redes/facebook.png" alt="facebook">
+                </a>
+                <a href="https://www.instagram.com/shenswife/" target="_blank">
+                    <img src="recursos/redes/instagram.png" alt="instagram">
+                </a>
+                <a href="https://www.youtube.com/channel/UC9ss_OS6EsL1RvdzVSne3_A" target="_blank">
+                    <img src="recursos/redes/youtube.png" alt="youtube">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/validaciones.js"></script>
+    <script type="text/javascript" src="js/funciones.js"></script>
+</body></html>
